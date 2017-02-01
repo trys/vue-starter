@@ -11,4 +11,4 @@ npm run dev
 npm run build
 ```
 
-Build process from [https://github.com/chrisvfritz/prerender-spa-plugin-vue-demo](Chris Fritz's Prerender SPA plugin Vue demo).
+Build process from [Chris Fritz's Prerender SPA plugin Vue demo](https://github.com/chrisvfritz/prerender-spa-plugin-vue-demo).
