@@ -3,11 +3,11 @@
 ``` bash
 npm install
 
-### then
+# then
 
 npm run dev
 
-### or
+# or
 
 npm run build
 node app.js
