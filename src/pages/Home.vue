@@ -3,12 +3,14 @@
     <main-layout>
       <h1>{{ title }}</h1>
       <img src="/static/images/logo.png">
+      <markdown></markdown>
     </main-layout>
   </div>
 </template>
 
 <script>
   import MainLayout from '../components/MainLayout.vue'
+  import markdown from '../content/Home.md'
 
   export default {
     data () {
@@ -24,7 +26,8 @@
       }
     },
     components: {
-      MainLayout
+      MainLayout,
+      markdown
     }
   }
 </script>
