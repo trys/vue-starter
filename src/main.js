@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueHead from 'vue-head'
 import routes from './routes'
+
+Vue.use(VueHead)
+Vue.use(VueRouter)
 
 var allRoutes = []
 var templates = {}
@@ -14,8 +18,6 @@ routes.map(function(el) {
   })
 
 })
-
-Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',

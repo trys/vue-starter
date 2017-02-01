@@ -10,6 +10,9 @@
   import MainLayout from '../components/MainLayout.vue'
 
   export default {
+    head: {
+      title: 'Page Not found'
+    },
     components: {
       MainLayout
     }

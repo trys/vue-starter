@@ -12,7 +12,14 @@
   export default {
     data () {
       return {
-        title: 'test'
+        title: 'About'
+      }
+    },
+    head: {
+      title: function () {
+        return {
+          inner: this.title
+        }
       }
     },
     components: {

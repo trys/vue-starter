@@ -1,7 +1,7 @@
 <template>
   <div>
     <main-layout>
-      <h1>Hi there</h1>
+      <h1>{{ title }}</h1>
       <img src="/static/images/logo.png">
     </main-layout>
   </div>
@@ -14,6 +14,13 @@
     data () {
       return {
         title: 'Home'
+      }
+    },
+    head: {
+      title: function () {
+        return {
+          inner: this.title
+        }
       }
     },
     components: {

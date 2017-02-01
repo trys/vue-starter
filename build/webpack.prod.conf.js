@@ -8,11 +8,9 @@ var Path = require('path')
 var PrerenderSpaPlugin = require('prerender-spa-plugin')
 var pageRoutes = require('../src/routes')
 var routePaths = []
-var routeTitles = []
 
 pageRoutes.map(function(el) {
   routePaths.push(el.altPath || el.path)
-  routeTitles[el.altPath || el.path] = el.title
 })
 
 // whether to generate source map for production files.
@@ -67,15 +65,7 @@ module.exports = merge(baseConfig, {
 
     new PrerenderSpaPlugin(
       Path.join(__dirname, '../dist'),
-      routePaths,
-      {
-        postProcessHtml: function (context) {
-          return context.html.replace(
-            /<title>[^<]*<\/title>/i,
-            '<title>' + routeTitles[context.route] + '</title>'
-          )
-        }
-      }
+      routePaths
     )
   ]
 })
