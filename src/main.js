@@ -3,7 +3,10 @@ import VueRouter from 'vue-router'
 import VueHead from 'vue-head'
 import routes from './routes'
 
-Vue.use(VueHead)
+Vue.use(VueHead, {
+  separator: '|',
+  complement: 'Vue Starter'
+})
 Vue.use(VueRouter)
 
 var allRoutes = []
