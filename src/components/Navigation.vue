@@ -10,13 +10,3 @@
     </ul>
   </nav>
 </template>
-
-<script>
-  import VLink from '../components/VLink.vue'
-
-  export default {
-    components: {
-      VLink
-    }
-  }
-</script>
