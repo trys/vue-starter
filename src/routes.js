@@ -8,6 +8,15 @@ module.exports = [
     title: 'About'
   },
   {
+    path: '/dynamic',
+    title: 'Dynamic',
+  },
+  {
+    path: '/about/:id',
+    title: 'Dynamic',
+    template: 'AboutSub'
+  },
+  {
     path: '*',
     title: 'Not Found',
     template: '404',
