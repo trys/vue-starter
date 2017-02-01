@@ -1,14 +1,16 @@
 # Vue Starter
 
 ``` bash
-# install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+### then
+
 npm run dev
 
-# build for production with minification
+### or
+
 npm run build
+node app.js
 ```
 
 Build process from [Chris Fritz's Prerender SPA plugin Vue demo](https://github.com/chrisvfritz/prerender-spa-plugin-vue-demo).
