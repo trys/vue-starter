@@ -1,5 +1,4 @@
 var path = require('path')
-var cssLoaders = require('./css-loaders')
 var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
@@ -67,11 +66,8 @@ module.exports = {
           limit: 10000,
           name: '[name].[ext]?[hash:7]'
         }
-      }
+      },
     ]
-  },
-  vue: {
-    loaders: cssLoaders()
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
