@@ -35,6 +35,11 @@ compiler.plugin('compilation', function (compilation) {
   })
 })
 
+app.get('/reload', function(req, res) {
+  hotMiddleware.publish({ action: 'reload' })
+  res.json({});
+})
+
 // proxy api requests
 Object.keys(proxyTable).forEach(function (context) {
   var options = proxyTable[context]

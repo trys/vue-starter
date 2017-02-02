@@ -5,8 +5,11 @@
   "author": "Trys Mudford <trysmudford@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "dev": "npm run devWebpack & npm run watchSCSS",
+    "build": "node build/build.js",
+
+    "watchSCSS": "gulp",
+    "devWebpack": "node build/dev-server.js"
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
@@ -16,6 +19,7 @@
     "vue-markdown-loader": "^0.6.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.2",
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
@@ -25,6 +29,8 @@
     "chromedriver": "^2.21.2",
     "connect-history-api-fallback": "^1.1.0",
     "cross-spawn": "^2.1.5",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.10.0",
     "eslint": "^2.0.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-friendly-formatter": "^1.2.2",
@@ -36,6 +42,11 @@
     "express": "^4.13.3",
     "file-loader": "^0.8.4",
     "function-bind": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.12.0",
     "inject-loader": "^2.0.1",
