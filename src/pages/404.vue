@@ -11,7 +11,9 @@
 
   export default {
     head: {
-      title: 'Page Not found'
+      title: {
+        inner: 'Page Not Found'
+      }
     },
     components: {
       MainLayout
